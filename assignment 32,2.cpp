@@ -4,7 +4,7 @@
  and display values of time.*/
 #include<iostream>
 using namespace std;
-class Complex
+class time
 {
 private:
     int a,b, c;//imaginary part
@@ -13,7 +13,7 @@ public:
     void get();
 };
 
-void Complex::set(int m,int n,int p){
+void time::set(int m,int n,int p){
   if( m >= 1 && m <= 60 && n >= 0 && n <= 60 && p >= 0 && p <= 60)
  {
     a=m;
@@ -29,7 +29,7 @@ void Complex::set(int m,int n,int p){
 
 }
 
-void Complex::get()
+void time::get()
 {
 cout << a<<" hrs "<<b<<" min "<<c<<" sec "<< endl;
 
@@ -40,7 +40,7 @@ cout << a<<" hrs "<<b<<" min "<<c<<" sec "<< endl;
 
 int main()
 { 
-Complex c;
+time c;
 c.set(1,5,7);
 //c.get();
 
