@@ -4,7 +4,7 @@
  and display values of time.*/
 #include<iostream>
 using namespace std;
-class time
+class Time
 {
 private:
     int a,b, c;//imaginary part
@@ -13,7 +13,7 @@ public:
     void get();
 };
 
-void time::set(int m,int n,int p){
+void Time::set(int m,int n,int p){
   if( m >= 1 && m <= 60 && n >= 0 && n <= 60 && p >= 0 && p <= 60)
  {
     a=m;
@@ -29,7 +29,7 @@ void time::set(int m,int n,int p){
 
 }
 
-void time::get()
+void Time::get()
 {
 cout << a<<" hrs "<<b<<" min "<<c<<" sec "<< endl;
 
@@ -39,16 +39,13 @@ cout << a<<" hrs "<<b<<" min "<<c<<" sec "<< endl;
 
 
 int main()
-{ 
-time c;
-c.set(1,5,7);
+{
+Time k;
+
+k.set(1,5,7);
 //c.get();
 
 return 0;
 
 
 }
-/*if (m >= 1 && m <= 60 && n >= 0 && n <= 60 && p >= 0 && p <= 60)
-{
-    // valid values
-}*/
