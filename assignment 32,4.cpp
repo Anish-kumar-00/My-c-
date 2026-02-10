@@ -31,7 +31,7 @@ void Date::set(int m,int n,int p){
 
 void Date::get()
 {
-cout << a<<" day"<<b<<" month "<<c<<" year "<< endl;
+cout << a<<"-"<<b<<"-"<<c<< endl;
 
 
 
