@@ -21,15 +21,35 @@ void TestResult::set(int x,int y,int z){
 }
 void TestResult::get(){
     cout << "Roll no:-"<<roll_no<< std::endl;
-    cout << "net_score- "<<(right*right_weightage)-(wrong*wrong_weightage)<< std::endl;
+  //  cout << "net_score- "<<right*right_weightage)-(wrong*wrong_weightage)<<std::endl;
 }
 void store(TestResult &,int,int,int);
 void store(TestResult &t,int x,int y,int z){
     t.roll_no=x;
     t.right=y;
     t.wrong=z;
+    t.net_score=(y*(t.right_weightage))-(z*(t.wrong_weightage));
 }
 
+void sort(TestResult c[],int n){
+    for(int j=0;j<(n-1);j++){
+  for(int i=0;i<(n-j-1);i++)
+     {
+         int k;
+        k=c[i].net_score;
+      if(c[i].net_score>c[i+1].net_score){
+        int k;
+        k=c[i].net_score;
+        c[i].net_score=c[i+1].net_score;
+       c[i+1].net_score=k;
+          
+        }
+     }
+  }
+
+
+
+}
 
 int main() {
   TestResult c[5];
@@ -45,7 +65,11 @@ for(;i<5;i++){
     store(c[i],i+1,x,y);
 
 }
+  sort( c,5);
+for(i=0;i<5;i++){
+   cout << i+1<<"="<<c[i].net_score<< endl;
 
+}
 
 
  // store(c[0],1,7,1);
@@ -53,7 +77,7 @@ for(;i<5;i++){
 //  store(c[2],3,4,1);
 //store(c[3],4,8,0);
  // int a=0;
-    cout << c[3].right<< std::endl;
+  //  cout << c[3].right<< std::endl;
 
  
   
