@@ -1,18 +1,18 @@
-class Person {
+class Person
+{
     private : 
-   char name[20];
-   int age;
-
+      char name[20];
+       int age;
    protected:
    void setters(int x)
-     {
-      name="anish";
-      age =x;
-         
+      {
+       name="anish";
+       age =x;
      }
+
     int  getters()
      {
-         
+         return x;
      }
 
 }
@@ -22,23 +22,36 @@ class person :: public Employee
     
 
   private:
-int salary;
-public:
-void   setEmployee(int x) {
+    int salary;
+  public:
+     void setEmployee(int x) 
+       {
        setters(x);
 
-     }
+        }
 
 
-void  showEmployee() {
+     int showEmployee()
+      {
     
-      getters();
+       int k=getters();
+        return k;
 
-     }
+      }
 
   }
 
+#include<stdio.h>
+using namespace std ;
+int main()
+{
+    
 
+
+
+
+return 0;
+}
 
 
 
