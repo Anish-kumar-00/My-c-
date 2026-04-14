@@ -4,8 +4,10 @@ class Person {
    int age;
 
    protected:
-   void setters()
+   void setters(int x)
      {
+      name="anish";
+      age =x;
          
      }
     int  getters()
@@ -21,6 +23,18 @@ class person :: public Employee
 
   private:
 int salary;
+public:
+void   setEmployee(int x) {
+       setters(x);
+
+     }
+
+
+void  showEmployee() {
+    
+      getters();
+
+     }
 
   }
 
