@@ -19,6 +19,8 @@ class person :: public Employee
   {
     
 
+  private:
+int salary;
 
   }
 
