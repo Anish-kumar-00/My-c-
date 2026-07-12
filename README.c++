@@ -144,4 +144,4 @@ Need custom modifications, private features, or a personalized bot setup?
 
 💌 **DM the developer on Telegram:** [@cantarella_wuwa](https://t.me/cantarella_wuwa)
 
-_Buy custom bots, advanced features, automation systems, Telegram CDN setups, encoding solutions, and more!_
+_Buy custom bots, advanced features, automation systems, Telegram CDN setups, encoding solutions, and, more!_
